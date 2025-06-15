@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mudassir's Pro Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><i class="fas fa-code"></i> Mudassir.dev</div>
+    <div class="toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button onclick="toggleTheme()">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="hero">
+    <h1>Hi, I'm Mudassir</h1>
+    <p id="typing"></p>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I build modern, responsive websites using HTML, CSS, and JavaScript. I also love to learn new technologies and tools.</p>
+  </section>
+  <section id="services">
+    <h2>Services</h2>
+    <div class="cards">
+      <div class="card"><i class="fas fa-paint-brush"></i><br> Web Design</div>
+      <div class="card"><i class="fas fa-code"></i><br> Frontend Development</div>
+      <div class="card"><i class="fas fa-id-badge"></i><br> Portfolio Creation</div>
+      <div class="card"><i class="fas fa-adjust"></i><br> Theme Switcher</div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    <p>© 2025 Mudassir Khan. Built with ❤️ in Pakistan.</p>
+  </footer>
+ <script src="script.js"></script>
+</body>
+</html>
