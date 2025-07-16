@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+*::selection{
+    background-color: black;
+    color: white;
+}
+/* nav bar  */
+#nav{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+}
+#logo{
+    width: 5vw;
+    height: 5vh;
+}
+#nav #logo h1{
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 1.7rem;
+    font-weight: 800;
+}
+#nav #navlinks ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    list-style: none;
+}
+#nav #navlinks ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: fixed;
+}
+#nav #navlinks ul li a:hover{
+    color: gray;
+    border-bottom: #000 1px solid;
+    padding-bottom: 4px;
+}
+#nav #navlinks ul #cart{
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.6rem;
+    background-color: #fff;
+    display: flex;
+    border: none;
+    border-radius: 1.2rem;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    z-index: 1000;
+}
+/* first page  */
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 20vh;
+    margin-bottom: 1rem;
+}
+#page1 h1{
+    font-size: 13.6vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 14vw;
+    letter-spacing: -5px;
+}
+#img-container{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    overflow: hidden;
+}
+#img-container img{
+    width: 100%;
+    position: relative;
+    z-index: 900;
+    scale: 1.25;
+}
+#lasttext{
+    width: 100%;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+}
+#lasttext h2{
+    font-size: 3vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#lasttext p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+#lasttext #learnmore{
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+#lasttext #learnmore:hover{
+    color: gray;
+}
+#last{
+    width: 100%;
+    margin-top: 5rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#last span{
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+}
+/* second page  */
+#page2{
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 1vw;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page2 .elem{
+    width: 33%;
+    margin: 0 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+#page2 .elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.25;
+}
+#page2 .elem .dets{
+    position: absolute;
+    width: 60%;
+    height: 6%;
+    background-color: #dcc0b4;
+    border: none;
+    border-radius: 1.5rem;
+}
+/* third page*/
+#page3{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#page3 #leftside {
+    width: 40%;
+    background-color: #fff;
+}
+#page3 #leftside h2{
+    font-size: 2.7vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#page3 #rightside{
+    width: 50%;
+    background-color: #fff;
+    padding-right: 2vw;
+}
+#page3 #rightside .para{
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    font-size: 15px;
+    letter-spacing: 1.3px;
+}
+#page3 #rightside #shopToSupport{
+    font-weight: 300;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    border-bottom: #000 1px solid;
+    padding-bottom: 4px;
+}
+#page4{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F7F7F7;
+}
+#page4 #firstchild{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+#page4 #firstchild .elem{
+    width: 40%;
+    display: flex;
+    align-items: space-between;
+    align-items: center;
+}
+#page4 #firstchild .elem img{
+    width: 100%;
+    height: 100%;
+}
+#page4 #secondchild{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+#page4 #secondchild .elem{
+    width: 40%;
+    display: flex;
+    align-items: space-between;
+    align-items: center;
+}
+#page4 #secondchild .elem img{
+    width: 100%;
+    height: 100%;
+}
+#page4lasttext{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 0 1vw;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid black;
+}
+#page4lasttext .text{
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    #nav #navlinks ul li{
+        display: none;
+    }
+    #page1 #lasttext h2{
+        font-size: 4.5vw;
+    }
+    #page2{
+        flex-direction: column;
+        align-items: center;
+    }
+    #page2 .elem{
+        width: 100%;
+        margin: 1vw 1vw;
+    }
+    #page3 #leftside h2{
+        font-size: 3.5vw;
+        width: 100%;
+    }
+    #page3 #rightside .para{
+        font-size: 12px;
+        line-height: 1rem;
+        letter-spacing: 1px;
+    }
+}
