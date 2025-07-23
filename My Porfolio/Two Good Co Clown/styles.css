@@ -102,49 +102,7 @@ html,body{
     z-index: 900;
     scale: 1.25;
 }
-#lasttext{
-    width: 100%;
-    text-align: center;
-    margin-top: 10rem;
-    margin-bottom: 1rem;
-}
-#lasttext h2{
-    font-size: 3vw;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-#lasttext p{
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-}
-#lasttext #learnmore{
-    font-size: 9px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid black;
-    cursor: pointer;
-}
-#lasttext #learnmore:hover{
-    color: gray;
-}
-#last{
-    width: 100%;
-    margin-top: 5rem;
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#last span{
-    font-size: 12px;
-    font-weight: 600;
-    border: none;
-    text-transform: uppercase;
-}
+
 /* second page  */
 #page2{
     min-height: 100vh;
@@ -222,7 +180,6 @@ html,body{
 }
 #page4{
     width: 100%;
-    min-height: 100vh;
     background-color: #F7F7F7;
 }
 #page4 #firstchild{
@@ -257,7 +214,7 @@ html,body{
     width: 100%;
     height: 100%;
 }
-#page4lasttext{
+#lasttext{
     width: 100%;
     margin-top: 5rem;
     display: flex;
@@ -267,14 +224,85 @@ html,body{
     background-color: #F7F7F7;
     border-bottom: 1px solid black;
 }
-#page4lasttext .text{
+#lasttext .text{
     font-size: 0.7rem;
     font-weight: 400;
     padding-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
+#page5{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F7F7F7;
+}
+#page5 #children{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page5 #children .child{
+    width: 11%;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 1vw;
+}
+#page5 #children .circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+#page5 #children .child .text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+#page5 #children .child .text:hover{
+    color: gray;
+    cursor: pointer;
+}
+#page5 #children .circle:hover{
+    cursor: pointer;
+}
+#page5 #headingparent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 0 1vw;
+}
+.heading{
+    width: 80%;
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+#footer .footerText .text{
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555555;
+}
 @media (max-width: 768px) {
     #nav #navlinks ul li{
         display: none;
@@ -298,5 +326,39 @@ html,body{
         font-size: 12px;
         line-height: 1rem;
         letter-spacing: 1px;
+    }
+    #page4 #firstchild,#secondchild{
+        width: 100%;
+    }
+    #lasttext .text{
+        font-size: 0.5rem;
+    }
+    #page5{
+        width: 100%;
+        margin: 1vw 0;
+        padding: 0 1vw;
+    }
+    #page5 #children{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    #page5 #children .child{
+        width: 18%;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 1vw;
+}
+    #page5 #children .circle{
+        width: 10px;
+        height: 10px;
+    }
+    #page5 #children .child{
+        gap: 5px;
+    }
+    #page5 #children .child .text{
+        font-size: 0.5rem;
+        font-weight: 700;
     }
 }
